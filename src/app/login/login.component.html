@@ -1,3 +1,69 @@
-<p>
-  login works!
-</p>
+<mat-card>
+  <mat-card-content>
+    <div class="text-center">
+      ALLOW US TO INSPIRE YOU AND ENJOY THE PRIVILEGE OF PROVIDING YOU WITH EVERYTHING YOU NEED TO MAKE YOUR DAY A SUCCESS. SCHEDULE
+      A CONSULTATION OR GET IN TOUCH WITH US FOR MORE INFORMATION.
+    </div>
+    <div style="margin-top: 30px;">
+      <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+        <div fxFlex="50" fxFlex.xs="50" fxFlex.gt-md="50">
+          <h4 class="text-center">PLEASE FILL IN YOUR INFORMATION BELOW AND I WILL GET IN TOUCH WITH YOU SHORTLY.</h4>
+          <p>Already have an idea of the services you’re interested in?</p>
+          <span>Fill out the forms below to expedite the process.</span>
+          <br>
+          <a href="#/detail-form/Wedding & Decor Worksheet" mat-raised-button color="primary" class="db m-t-15"> Wedding & Decor Worksheet </a>
+          <a href="#/indian-wedding-worksheet " mat-raised-button color="primary" class="db m-t-15"> Indian Wedding Worksheet </a>
+          <a href="#/everyday-flower-order" mat-raised-button color="primary" class="db m-t-15"> Everyday Flower Order </a>
+          <a href="#/wedding-planning" mat-raised-button color="primary" class="db m-t-15"> Wedding Planning </a>
+          <a href="#/meeting-florist" mat-raised-button color="primary" class="db m-t-15"> Meeting Florist </a>
+
+          <p>
+            <b>Already a Client?
+              <a mat-button color="primary" (click)="open()">
+                <b>Login</b>
+              </a>
+            </b>
+          </p>
+        </div>
+        <div fxFlex="50" fxFlex.xs="50" fxFlex.gt-md="50">
+          <mat-card>
+            <mat-card-content>
+              <mat-card-title>
+                Contact Form
+              </mat-card-title>
+              <mat-form-field>
+                <input matInput placeholder="First Name">
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput placeholder="Last Name">
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput placeholder="Phone">
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput placeholder="Email">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Wedding Date">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Venue">
+              </mat-form-field>
+              <mat-form-field>
+                <textarea matInput placeholder="Message"></textarea>
+              </mat-form-field>
+
+              <button mat-raised-button color="primary" class="m-t-15">Submit</button>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+
+
+
+  </mat-card-content>
+</mat-card>

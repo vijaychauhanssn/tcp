@@ -1,0 +1,50 @@
+<div class="login-register" style="height: 74vh;">
+  <div class="login-register-box">
+    <mat-card style="width: 320px;">
+      <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="text-center">
+            <img alt="homepage" src="assets/images/logo-icon.png">
+            <h4 class="m-t-0">Login to App</h4>
+          </div>
+
+          <div fxLayout="row" fxLayoutWrap="wrap">
+            <!-- col full-->
+            <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+              <mat-form-field>
+                <input matInput placeholder="Username" [formControl]="form.controls['uname']">
+              </mat-form-field>
+              <small *ngIf="form.controls['uname'].hasError('required') && form.controls['uname'].touched" class="text-danger support-text">Username is required.</small>
+            </div>
+          </div>
+
+          <!-- col full-->
+          <div fxLayout="row" fxLayoutWrap="wrap">
+            <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+              <mat-form-field>
+                <input matInput type="password" placeholder="Password" [formControl]="form.controls['password']">
+              </mat-form-field>
+              <small *ngIf="form.controls['password'].hasError('required') && form.controls['password'].touched" class="text-danger support-text">Password is required.</small>
+            </div>
+          </div>
+          <div fxLayout="row" fxLayoutWrap="wrap">
+            <!-- col half-->
+            <div fxFlex.gt-sm="50" fxFlex.gt-xs="50">
+              <mat-checkbox color="warn">Remember me</mat-checkbox>
+            </div>
+            <!-- col half-->
+            <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" class="text-right">
+              <a class="link">Forgot pwd?</a>
+            </div>
+          </div>
+          <!-- col full-->
+          <div fxLayout="row" fxLayoutWrap="wrap">
+            <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+              <a mat-raised-button color="primary" class="btn-block btn-lg m-t-20 m-b-20" href="#/home">Login</a>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
